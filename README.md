@@ -10,4 +10,6 @@ Welcome to my GitHub page! I am cclucky, a Computer Science student from China, 
 
 [![Top Langs](https://github-readme-stats-eosin-sigma-28.vercel.app/api/top-langs/?username=ccclucky&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
+![Metrics](https://raw.githubusercontent.com/ccclucky/ccclucky/main/github-metrics.svg)
+
 
