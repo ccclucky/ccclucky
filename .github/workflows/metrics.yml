@@ -9,6 +9,10 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
+      - name: 安装依赖
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker.io jq
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
