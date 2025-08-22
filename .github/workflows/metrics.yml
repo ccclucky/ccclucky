@@ -20,20 +20,41 @@ jobs:
       # 直接运行 metrics action 即可
       - uses: lowlighter/metrics@latest
         with:
+          # 你的基础配置
           token: ${{ secrets.METRICS_TOKEN }}
-          # 基础设置
           user: ccclucky
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Shanghai
 
-          # 启用 commit 统计
+          # 视觉调整
+          extras_css: |
+            svg {
+              font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            }
+            .header h1 {
+              color: #0366d6;
+            }
+
+          # --- 插件部分 ---
+
+          # Isocalendar (你已在使用的插件)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-          # 启用语言统计
+          # Languages (你已在使用的插件，并开启深度分析)
           plugin_languages: yes
-          plugin_languages_sections: most-used
           plugin_languages_limit: 8
-          plugin_languages_recent_load: 300
-          plugin_languages_recent_days: 14
+          plugin_languages_sections: most-used
+          plugin_languages_indepth: yes  # 更精确，但会慢一些
+
+          # 代码行数统计
+          plugin_lines: yes
+
+          # 杰出贡献 (展示社区影响力)
+          plugin_notable: yes
+          plugin_notable_limit: 3
+
+          # GitHub 成就
+          plugin_achievements: yes
+          plugin_achievements_threshold: B # 显示更高级别的成就
