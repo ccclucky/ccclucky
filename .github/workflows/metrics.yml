@@ -50,10 +50,3 @@ jobs:
 
           # GitHub Achievements (GitHub 成就)
           plugin_achievements: yes
-          plugin_achievements_threshold: B # 显示 B 级及以上的成就
-          
-          # People (关注者徽章墙) - 新增功能
-          plugin_people: yes
-          plugin_people_limit: 28 # 显示的徽章数量
-          plugin_people_size: 28 # 徽章的大小
-          plugin_people_types: followers # 展示关注者，也可以是 following
