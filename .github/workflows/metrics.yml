@@ -53,7 +53,6 @@ jobs:
 
           # 杰出贡献 (展示社区影响力)
           plugin_notable: yes
-          plugin_notable_limit: 3
 
           # GitHub 成就
           plugin_achievements: yes
