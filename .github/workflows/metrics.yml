@@ -1,8 +1,8 @@
 name: Metrics
 
 on:
-  schedule: # 每天 06:00 自动更新
-    - cron: "0 6 * * *"
+  schedule: # 每天北京时间 06:00 自动更新 (UTC 22:00)
+    - cron: "0 22 * * *"
   workflow_dispatch: # 手动触发
 
 jobs:
@@ -11,16 +11,9 @@ jobs:
     permissions:
       contents: write
     steps:
-      # 删掉下面这个安装依赖的步骤
-      # - name: 安装依赖
-      #   run: |
-      #     sudo apt-get update
-      #     sudo apt-get install -y docker.io jq
-
-      # 直接运行 metrics action 即可
       - uses: lowlighter/metrics@latest
         with:
-          # 你的基础配置
+          # 基础配置
           token: ${{ secrets.METRICS_TOKEN }}
           user: ccclucky
           template: classic
@@ -38,22 +31,29 @@ jobs:
 
           # --- 插件部分 ---
 
-          # Isocalendar (你已在使用的插件)
+          # Isocalendar (年度贡献日历)
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-          # Languages (你已在使用的插件，并开启深度分析)
+          # Languages (语言统计, 已开启深度分析)
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
           plugin_languages_indepth: yes  # 更精确，但会慢一些
 
-          # 代码行数统计
+          # Lines of code (代码行数统计)
           plugin_lines: yes
 
-          # 杰出贡献 (展示社区影响力)
+          # Notable contributions (杰出贡献)
           plugin_notable: yes
+          plugin_notable_limit: 3
 
-          # GitHub 成就
+          # GitHub Achievements (GitHub 成就)
           plugin_achievements: yes
-          plugin_achievements_threshold: B # 显示更高级别的成就
+          plugin_achievements_threshold: B # 显示 B 级及以上的成就
+          
+          # People (关注者徽章墙) - 新增功能
+          plugin_people: yes
+          plugin_people_limit: 28 # 显示的徽章数量
+          plugin_people_size: 28 # 徽章的大小
+          plugin_people_types: followers # 展示关注者，也可以是 following
