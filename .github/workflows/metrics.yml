@@ -47,6 +47,3 @@ jobs:
           # Notable contributions (杰出贡献)
           plugin_notable: yes
           plugin_notable_limit: 3
-
-          # GitHub Achievements (GitHub 成就)
-          plugin_achievements: yes
