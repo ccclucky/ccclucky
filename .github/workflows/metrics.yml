@@ -37,6 +37,7 @@ jobs:
 
           # Languages (语言统计, 已开启深度分析)
           plugin_languages: yes
+          plugin_languages_forks: yes
           plugin_languages_limit: 8
           plugin_languages_sections: most-used
           plugin_languages_indepth: yes  # 更精确，但会慢一些
