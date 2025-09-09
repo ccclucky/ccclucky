@@ -42,7 +42,7 @@ jobs:
           plugin_languages_forks: true       # 包含 fork 仓库
           plugin_languages_limit: 8          # 显示前 8 种语言
           plugin_languages_sections: most-used
-          plugin_languages_categories: programming, markup, data, prose
+          plugin_languages_categories: programming
 
           # 👇 关键新增
           commits_authoring: |
@@ -55,6 +55,8 @@ jobs:
           plugin_languages_analysis_timeout: 30
           plugin_languages_analysis_timeout_repositories: 15
 
+          plugin_orgs: yes           # 启用组织仓库分析
+          plugin_orgs_limit: 10      # 可显示的组织数量
 
           # Lines of code (代码行数统计)
           plugin_lines: yes
