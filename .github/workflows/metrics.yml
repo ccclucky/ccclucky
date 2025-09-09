@@ -44,6 +44,17 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_categories: programming, markup, data, prose
 
+          # 👇 关键新增
+          commits_authoring: |
+            ccclucky
+            cclucky
+            CCCLUCKY
+            CCLUCKY
+            jingc5946@gmail.com
+            2226114701@qq.com
+          plugin_languages_analysis_timeout: 30
+          plugin_languages_analysis_timeout_repositories: 15
+
 
           # Lines of code (代码行数统计)
           plugin_lines: yes
