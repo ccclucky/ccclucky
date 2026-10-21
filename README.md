@@ -33,4 +33,10 @@ I also contribute fixes to open-source projects I use, including [RAGFlow](https
 
 ## GitHub activity
 
-![GitHub activity for ccclucky](./github-metrics.svg)
+A snapshot of my GitHub activity, updated daily.
+
+![Commits in the last seven days and this year](./github-commit-stats.svg)
+
+![Yearly contribution calendar, commit streaks, and GitHub activity](./github-metrics.svg)
+
+<sub>GitHub contribution-eligible commits, not a count of all code written. Counts depend on GitHub's contribution rules and accessible repositories.</sub>
