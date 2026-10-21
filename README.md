@@ -16,7 +16,7 @@ A Java backend developer working on **AI transformation inside a traditional ent
 | :--- | :--- |
 | **Developer · Reviewer · Knowledge · Maintainer**<br/>Four production agents supporting software development, code review, knowledge access, and maintenance. | **NL2SQL · Workflow automation**<br/>AI integrated into existing enterprise systems and everyday operations. |
 | **03 / Enterprise knowledge** | **04 / LLM infrastructure** |
-| **Baishitong AI assistant · RAGFlow · Agentic RAG**<br/>A production knowledge base and WeCom assistant, backed by document processing, embeddings, and reranking. | **LLM gateway · vLLM · SGLang**<br/>Unified model access, local inference, and the reliability work needed to support real applications. |
+| **Enterprise Knowledge Assistant · RAGFlow · Agentic RAG**<br/>A production knowledge base and WeCom assistant, backed by document processing, embeddings, and reranking. | **LLM gateway · vLLM · SGLang**<br/>Unified model access, local inference, and the reliability work needed to support real applications. |
 
 ### Beyond the day job
 
