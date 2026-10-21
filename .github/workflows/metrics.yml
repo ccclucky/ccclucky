@@ -34,3 +34,28 @@ jobs:
           plugin_lines: no
           plugin_orgs: no
           plugin_notable: no
+
+      - name: Checkout profile repository for commit counters
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: main
+          persist-credentials: true
+
+      - name: Render weekly and yearly commit counters
+        env:
+          GITHUB_API_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GITHUB_USERNAME: ccclucky
+        run: node scripts/generate-commit-stats.mjs
+
+      - name: Publish commit counters
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add github-commit-stats.svg
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: refresh commit activity card [Skip GitHub Action]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
