@@ -1,9 +1,10 @@
 name: Metrics
 
 on:
-  schedule: # 每天北京时间 06:00 自动更新 (UTC 22:00)
+  schedule:
+    # Daily at 06:00 Asia/Shanghai (22:00 UTC).
     - cron: "0 22 * * *"
-  workflow_dispatch: # 手动触发
+  workflow_dispatch:
 
 jobs:
   github-metrics:
@@ -13,54 +14,18 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # 基础配置
           token: ${{ secrets.METRICS_TOKEN }}
           user: ccclucky
           template: classic
-          base: header, activity, community, repositories, metadata
+          base: header, activity
           config_timezone: Asia/Shanghai
 
-          # 视觉调整
-          extras_css: |
-            svg {
-              font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-            }
-            .header h1 {
-              color: #0366d6;
-            }
-
-          # --- 插件部分 ---
-
-          # Isocalendar (年度贡献日历)
+          # Keep the contribution calendar; selected merged PRs live in README.
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-          # Languages (语言统计, 已开启深度分析)
-          plugin_languages: yes
-          plugin_languages_indepth: yes      # 深度分析，统计仓库文件而不是 push
-          plugin_languages_ignored: ''       # 不忽略任何语言
-          plugin_languages_forks: true       # 包含 fork 仓库
-          plugin_languages_limit: 8          # 显示前 8 种语言
-          plugin_languages_sections: most-used
-          plugin_languages_categories: programming
-
-          # 👇 关键新增
-          commits_authoring: |
-            ccclucky
-            cclucky
-            CCCLUCKY
-            CCLUCKY
-            jingc5946@gmail.com
-            2226114701@qq.com
-          plugin_languages_analysis_timeout: 30
-          plugin_languages_analysis_timeout_repositories: 15
-
-          plugin_orgs: yes           # 启用组织仓库分析
-          plugin_orgs_limit: 10      # 可显示的组织数量
-
-          # Lines of code (代码行数统计)
-          plugin_lines: yes
-
-          # Notable contributions (杰出贡献)
-          plugin_notable: yes
-          plugin_notable_limit: 3
+          # Avoid empty or misleading repository-derived statistics.
+          plugin_languages: no
+          plugin_lines: no
+          plugin_orgs: no
+          plugin_notable: no
