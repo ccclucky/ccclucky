@@ -1,42 +1,30 @@
-# Hey, I'm CCLUCKY 👋
+# Hi, I'm CCLUCKY 👋
 
 **Building AI where business already happens.**
 
-I started with Java backend and full-stack development, working on real enterprise systems. Today, I'm part of the core engineering effort behind AI transformation at a traditional enterprise—bringing agents, knowledge systems, and model infrastructure into everyday work.
+A Java backend developer working on **AI transformation inside a traditional enterprise**. I'm part of the core team bringing agents, knowledge systems, and LLM infrastructure into production—and keeping them running.
 
-I care about what happens *after* something ships.
+[Personal site](https://ai-native-identity.vercel.app) · [X](https://x.com/cclove057) · [Xiaohongshu](https://www.xiaohongshu.com/user/profile/6782efb3000000000803f751) · WeChat: **CCLUCKY 的逻辑碎片**
 
-## What's running in production
+<p align="center">
+  <img src="./github-activity-overview.svg" alt="GitHub commits in the last 7 days and this year, plus the annual contribution calendar" width="860" />
+</p>
 
-- **Digital workforce** — A team of **Developer, Reviewer, Knowledge, and Maintainer agents**, supporting code changes, reviews, internal knowledge, and system maintenance.
-- **AI in business workflows** — Natural-language SQL, workflow automation, and agents integrated with existing business systems.
-- **Enterprise knowledge** — Knowledge-base engineering with document processing, Embedding / Rerank, RAGFlow, and Agentic RAG; plus **Baishitong**, an AI knowledge assistant available through WeCom.
-- **LLM infrastructure** — A unified model API gateway, multi-provider integrations, local model deployment, and inference services using tools such as vLLM and SGLang.
+### What I'm shipping
 
-These systems are in use, and I'm one of the people building, debugging, and improving them—not claiming a company's work as a solo project.
+| **01 / Digital workforce** | **02 / AI in business workflows** |
+| :--- | :--- |
+| **Developer · Reviewer · Knowledge · Maintainer**<br/>Four production agents supporting software development, code review, knowledge access, and maintenance. | **NL2SQL · Workflow automation**<br/>AI integrated into existing enterprise systems and everyday operations. |
+| **03 / Enterprise knowledge** | **04 / LLM infrastructure** |
+| **Baishitong AI assistant · RAGFlow · Agentic RAG**<br/>A production knowledge base and WeCom assistant, backed by document processing, embeddings, and reranking. | **LLM gateway · vLLM · SGLang**<br/>Unified model access, local inference, and the reliability work needed to support real applications. |
 
-## The engineering behind it
+### Beyond the day job
 
-Getting an agent to respond is the easy part. I spend more time on the questions that show up in real systems: unreliable retrieval, failed tool calls, model API incompatibilities, rate limits, timeouts, and recovery.
+I also build [WeCom CLI](https://github.com/ccclucky/wecom-cli), explore [Agent Time](https://github.com/ccclucky/agent-time), and contribute fixes to projects I use, including [RAGFlow](https://github.com/infiniflow/ragflow). I'm especially interested in **Agent reliability, retrieval quality, and what happens after deployment**.
 
-That work draws on both my **Java / Spring Boot** background and hands-on **AI application engineering**.
-
-## Outside work
-
-I build tools and experiments of my own, including [WeCom CLI](https://github.com/ccclucky/wecom-cli) and [Agent Time](https://github.com/ccclucky/agent-time) (an early-stage experiment in measuring agent and user waiting time).
-
-I also contribute fixes to open-source projects I use, including [RAGFlow](https://github.com/infiniflow/ragflow).
-
-## Elsewhere
-
-[Personal site](https://ai-native-identity.vercel.app) · [X / Twitter](https://x.com/cclove057) · [Xiaohongshu](https://www.xiaohongshu.com/user/profile/6782efb3000000000803f751) · WeChat Official Account: **CCLUCKY 的逻辑碎片**
-
-## GitHub activity
-
-A snapshot of my GitHub activity, updated daily.
-
-![Commits in the last seven days and this year](./github-commit-stats.svg)
-
-![Yearly contribution calendar, commit streaks, and GitHub activity](./github-metrics.svg)
-
-<sub>GitHub contribution-eligible commits, not a count of all code written. Counts depend on GitHub's contribution rules and accessible repositories.</sub>
+<details>
+<summary><b>More GitHub activity</b> · Detailed statistics, contribution history & streaks</summary>
+<p align="center">
+  <img src="./github-metrics.svg" alt="Detailed GitHub statistics, contribution calendar, and commit streaks" width="440" />
+</p>
+</details>
