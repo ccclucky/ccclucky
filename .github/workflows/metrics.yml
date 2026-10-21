@@ -5,6 +5,11 @@ on:
     # Daily at 06:00 Asia/Shanghai (22:00 UTC).
     - cron: "0 22 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - .github/workflows/metrics.yml
 
 jobs:
   github-metrics:
