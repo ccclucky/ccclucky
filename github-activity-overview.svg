@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="252" viewBox="0 0 860 252" role="img" aria-label="CCLUCKY GitHub contribution overview, loading yearly activity calendar">
+<rect x="0.5" y="0.5" width="859" height="251" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+<text x="24" y="29" fill="#57606a" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="11" letter-spacing="1.2">GITHUB / CONTRIBUTION ACTIVITY</text>
+<text x="24" y="87" fill="#24292f" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="44">9</text>
+<text x="24" y="105" fill="#57606a" font-family="Arial, Helvetica, sans-serif" font-size="11">COMMITS · LAST 7 DAYS</text>
+<line x1="260" y1="43" x2="260" y2="109" stroke="#d8dee4"/>
+<text x="286" y="87" fill="#24292f" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="44">1,888</text>
+<text x="286" y="105" fill="#57606a" font-family="Arial, Helvetica, sans-serif" font-size="11">2026 COMMITS · YEAR TO DATE</text>
+<line x1="24" y1="120" x2="836" y2="120" stroke="#eaeef2"/>
+<text x="24" y="178" fill="#57606a" font-family="Arial, Helvetica, sans-serif" font-size="15">Refreshing this year's contribution calendar...</text>
+<text x="24" y="224" fill="#6e7781" font-family="Arial, Helvetica, sans-serif" font-size="11">The overview is updated by the daily GitHub Actions workflow.</text>
+</svg>
