@@ -4,6 +4,10 @@
 
 A Java backend developer working on **AI transformation inside a traditional enterprise**. I'm part of the core team bringing agents, knowledge systems, and LLM infrastructure into production—and keeping them running.
 
+**Open to opportunities** · AI Agent Engineering · LLM Applications · Enterprise AI
+
+Shenzhen · Hong Kong · Remote
+
 [Personal site](https://me.cclucky.eu.org) · [X](https://x.com/cclove057) · [Xiaohongshu](https://www.xiaohongshu.com/user/profile/6782efb3000000000803f751) · WeChat: **CCLUCKY 的逻辑碎片**
 
 <p align="center">
