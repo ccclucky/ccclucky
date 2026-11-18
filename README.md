@@ -8,7 +8,7 @@ A Java backend developer working on **AI transformation inside a traditional ent
 
 Shenzhen · Hong Kong · Remote
 
-[Personal site](https://me.cclucky.eu.org) · [X](https://x.com/cclove057) · [Xiaohongshu](https://www.xiaohongshu.com/user/profile/6782efb3000000000803f751) · WeChat: **CCLUCKY 的逻辑碎片**
+[Personal site](https://cclucky.dev) · [X](https://x.com/cclove057) · [Xiaohongshu](https://www.xiaohongshu.com/user/profile/6782efb3000000000803f751) · WeChat: **CCLUCKY 的逻辑碎片**
 
 <p align="center">
   <img src="./github-activity-overview.svg" alt="GitHub commits in the last 7 days and this year, plus the annual contribution calendar" width="860" />
